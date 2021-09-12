@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "name": "pedido"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pedido_user": {
+      "plugin": "admin",
+      "model": "user"
+    },
+    "items": {
+      "collection": "produto"
+    },
+    "total": {
+      "type": "decimal"
+    }
+  }
+}
