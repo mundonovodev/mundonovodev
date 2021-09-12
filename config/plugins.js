@@ -1,19 +1,15 @@
 module.exports = ({ env }) => ({
+  // ...
   email: {
-    provider: 'smtp',
+    provider: 'sendgrid',
     providerOptions: {
-      host: env('SMTP_HOST'), //SMTP Host
-      port: 465   , //SMTP Port
-      secure: true,
-      username: env('SMTP_USERNAME'),
-      password: env('SMTP_PASSWORD'),
-      rejectUnauthorized: true,
-      requireTLS: true,
-      connectionTimeout: 1,
+      apiKey: env('SENDGRID_API_KEY'),
     },
     settings: {
-      from: env('SMTP_FROM'),
-      replyTo: env('SMTP_REPLYTO'),
+      defaultFrom: 'mundonovodev@gmail.com',
+      defaultReplyTo: 'mundonovodev@gmail.com',
+      testAddress: 'mundonovodev@gmail.com',
     },
   },
+  // ...
 });
