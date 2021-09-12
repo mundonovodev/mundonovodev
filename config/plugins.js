@@ -2,19 +2,18 @@ module.exports = ({ env }) => ({
   email: {
     provider: 'smtp',
     providerOptions: {
-      host: 'smtp.gmail.com', //SMTP Host
+      host: env('SMTP_HOST'), //SMTP Host
       port: 465   , //SMTP Port
       secure: true,
-      username: 'mundonovodev@gmail.com',
-      password: 'Bmj@241401!',
+      username: env('SMTP_USERNAME'),
+      password: env('SMTP_PASSWORD'),
       rejectUnauthorized: true,
       requireTLS: true,
       connectionTimeout: 1,
     },
     settings: {
-      from: 'mundonovodev@gmail.com',
-      replyTo: 'nao-responda@gmail.com',
+      from: env('SMTP_FROM'),
+      replyTo: env('SMTP_REPLYTO'),
     },
   },
 });
-
