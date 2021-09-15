@@ -9,3 +9,6 @@ SENDGRID_API_KEY=<Get the key on your SendGrid account!>
 DEFAULT_FROM=<your_email@domain.com>
 DEFAULT_REPLY_TO=<your_email@domain.com>
 TEST_ADDRESS=<your_email@domain.com>
+
+Deploy usando este comando:
+git subtree push --prefix strapi heroku main
