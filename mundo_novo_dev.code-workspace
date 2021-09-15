@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "strapi"
+		},
+		{
+			"path": "flutter/mobile/mnd_app"
+		},
+		{
+			"path": "flutter/mobile/core_module"
+		},
+		{
+			"path": "flutter/mobile/dependencies_module"
+		},
+		{
+			"path": "flutter/mobile/design_system_module"
+		}
+	]
+}
