@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/indices-financeiros",
+      "handler": "indices-financeiros.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indices-financeiros/count",
+      "handler": "indices-financeiros.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/indices-financeiros/:id",
+      "handler": "indices-financeiros.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/indices-financeiros",
+      "handler": "indices-financeiros.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/indices-financeiros/:id",
+      "handler": "indices-financeiros.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/indices-financeiros/:id",
+      "handler": "indices-financeiros.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

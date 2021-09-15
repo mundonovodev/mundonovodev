@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "indices_financeiros",
+  "info": {
+    "name": "Indices_Financeiros"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dolar": {
+      "type": "decimal"
+    },
+    "bitcoin": {
+      "type": "float"
+    }
+  }
+}
